@@ -50,11 +50,11 @@ public class Solution {
 			Long tempMultiply = (long) tempInt;
 			int multiCount = i;
 		
-			while (multiCount < storeStringList.size() - 1) {
-				tempMultiply = tempMultiply * 10;
-				multiCount = multiCount + 1;
-			}
-			sum = sum + tempMultiply;
+//			while (multiCount < storeStringList.size() - 1) {
+//				tempMultiply = tempMultiply * 10;
+//				multiCount = multiCount + 1;
+//			}
+			sum = sum * 10 + tempMultiply;
 			
 			if (startChar == null) {
 				if (sum > Integer.MAX_VALUE) {
@@ -81,9 +81,8 @@ public class Solution {
 	}
 	
 	public static void main(String[] args){
-		System.out.println(myAtoi("   -112255809sss"));
-//		Long testLong = new Long(9223372036854775809);
-//		Long testLong = new Lo
-//		System.out.println(testLong);
+		
+//		System.out.println(new String("   -112255809ssstt  ").trim());
+		System.out.println(myAtoi("  44444sssss"));
 	}
 }
