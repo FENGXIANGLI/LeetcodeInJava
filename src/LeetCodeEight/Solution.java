@@ -81,8 +81,12 @@ public class Solution {
 	}
 	
 	public static void main(String[] args){
-		
+		 
 //		System.out.println(new String("   -112255809ssstt  ").trim());
-		System.out.println(myAtoi("  44444sssss"));
+//		Integer.MAX_VALUE
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(- 9 % 10);
+		System.out.println(Integer.MIN_VALUE);
+//		System.out.println(myAtoi("  44444sssss"));
 	}
 }
