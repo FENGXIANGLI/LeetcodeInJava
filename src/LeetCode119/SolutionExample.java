@@ -16,6 +16,6 @@ public class SolutionExample {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(getRow(0));
+		System.out.println(getRow(4));
 	}
 }
