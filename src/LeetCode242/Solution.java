@@ -1,3 +1,5 @@
+package LeetCode242;
+
 // Given two strings s and t, write a function to determine if t is an anagram of s.
 
 // For example,
@@ -9,7 +11,7 @@
 
 // Follow up:
 // What if the inputs contain unicode characters? How would you adapt your solution to such case?
-// Hash table – O(n) time, O(1) space
+// Hash table 鈥� O(n) time, O(1) space
 
 import java.util.*;
 public class Solution {

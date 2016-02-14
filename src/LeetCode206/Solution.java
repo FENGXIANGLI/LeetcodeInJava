@@ -1,3 +1,5 @@
+package LeetCode206;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -7,7 +9,7 @@
  * }
  */
 
-// Assume that we have linked list 1 → 2 → 3 → Ø, we would like to change it to Ø ← 1 ← 2 ← 3.
+// Assume that we have linked list 1 鈫� 2 鈫� 3 鈫� 脴, we would like to change it to 脴 鈫� 1 鈫� 2 鈫� 3.
 // iterative
 public class Solution {
     public ListNode reverseList(ListNode head) {
