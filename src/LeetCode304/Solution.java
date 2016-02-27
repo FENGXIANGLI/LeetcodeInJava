@@ -1,8 +1,10 @@
+package LeetCode304;
+
 public class Solution {
 
 private int [][] dp;
 
-    public NumMatrix(int[][] matrix) {
+    public Solution(int[][] matrix) {
     	if (matrix.length == 0 || matrix[0].length == 0) return;
         dp = new int[matrix.length][matrix[0].length + 1];
         for (int i =0; i< matrix.length;i++) {

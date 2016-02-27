@@ -1,16 +1,18 @@
-// Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+package LeetCode303;
+
+// Given an integer array nums, find the sum of the elements between indices i and j (i 鈮� j), inclusive.
 
 
 // You may assume that the array does not change.
 // There are many calls to sumRange function.
 
 // times:O(1) space: O(n)
-// java数组初始化后默认是0
-public class NumArray {
+// java鏁扮粍鍒濆鍖栧悗榛樿鏄�0
+public class Solution {
 
 private int[] sum;
 
-    public NumArray(int[] nums) {
+    public Solution(int[] nums) {
         sum = new int [nums.length + 1];
         for (int i = 0 ; i< nums.length; i++) {
         	sum[i+1] = sum[i] + nums[i]; 
