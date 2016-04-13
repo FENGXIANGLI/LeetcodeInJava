@@ -3,7 +3,7 @@ public class Solution {
 	public boolean searchMatrix(int[][] matrix, int target) {
 		int up = 0;
 		int down = matrix.length - 1;
-		int middleRow = up + (down - up) /2;
+		int middleRow = up + ((down - up)>>1);
 		while (up <= down) {
 			middleRow = up + ((down - up)>>1);
 			if (matrix[middleRow][0] == target) {
@@ -20,7 +20,7 @@ public class Solution {
 		int left = 0;
 		int right = matrix[0].length - 1;
 		while (left <= right) {
-			int middleColumn = left + (right - left)/2;
+			int middleColumn = left + ((right - left)>>1);
 			if (matrix[middleRow][middleColumn] == target) 
 				return true;
 			if (matrix[middleRow][middleColumn] > target) {
