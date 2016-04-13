@@ -5,27 +5,17 @@ public class Solution {
 		int down = matrix.length - 1;
 		int middleRow = up + (down - up) /2;
 		while (up <= down) {
-			middleRow = up + (down - up) /2;
-			if (matrix.length -1 ==0 )  {
-				break;
-			}
-			if (middleRow ==0 || middleRow == matrix.length - 1) {
-				if (middleRow > 0 && matrix[middleRow - 1][0] <= target && matrix[middleRow][0] > target) {
-					middleRow -= 1;
-				}
-				if (middleRow < matrix.length -1 && matrix[middleRow + 1][0] <= target) {
-					middleRow += 1;
-				}
-				
-				break;
-			}
-			if (matrix[middleRow][0] <= target&& matrix[middleRow+1][0] > target) {
+			middleRow = up + ((down - up)>>1);
+			if (matrix[middleRow][0] == target) {
 				break;
 			}else if (matrix[middleRow][0] > target) {
 				down = middleRow - 1;
 			}else {
 				up = middleRow + 1;
 			}
+		}
+		if (matrix[middleRow][0] > target && middleRow != 0) {
+			middleRow -= 1;
 		}
 		int left = 0;
 		int right = matrix[0].length - 1;
@@ -48,6 +38,8 @@ public class Solution {
 			{3},
 			{5}
 		};
-		System.out.println(testSolution.searchMatrix(testMatrix,5));
+		System.out.println(testSolution.searchMatrix(testMatrix,6));
 	}
 }
+
+
